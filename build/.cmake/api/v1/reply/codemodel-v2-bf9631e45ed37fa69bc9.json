@@ -1,0 +1,101 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "linux",
+					"jsonFile" : "directory-linux-Debug-6f2f35e82fe0548c2d00.json",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "linux",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "shared",
+					"jsonFile" : "directory-shared-Debug-4d85a89e60f399da62e2.json",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "shared",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "libertas",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "argparser::@b1f7512934231ee3f25d",
+					"jsonFile" : "target-argparser-Debug-89d05721de1cd4abee26.json",
+					"name" : "argparser",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cron::@f9332e6f5df4d647d8f6",
+					"jsonFile" : "target-cron-Debug-3b1b76580dbf6b44ed3e.json",
+					"name" : "cron",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "libertas::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-libertas-Debug-b302296eacfd31b41704.json",
+					"name" : "libertas",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nick/Documents/Libertas/build",
+		"source" : "/home/nick/Documents/Libertas/src"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

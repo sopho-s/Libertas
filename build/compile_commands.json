@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/nick/Documents/Libertas/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/libertas.dir/linux.o -c /home/nick/Documents/Libertas/src/linux.cpp",
+  "file": "/home/nick/Documents/Libertas/src/linux.cpp",
+  "output": "CMakeFiles/libertas.dir/linux.o"
+},
+{
+  "directory": "/home/nick/Documents/Libertas/build/linux",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/cron.dir/cron.o -c /home/nick/Documents/Libertas/src/linux/cron.cpp",
+  "file": "/home/nick/Documents/Libertas/src/linux/cron.cpp",
+  "output": "linux/CMakeFiles/cron.dir/cron.o"
+},
+{
+  "directory": "/home/nick/Documents/Libertas/build/shared",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/argparser.dir/argparser.o -c /home/nick/Documents/Libertas/src/shared/argparser.cpp",
+  "file": "/home/nick/Documents/Libertas/src/shared/argparser.cpp",
+  "output": "shared/CMakeFiles/argparser.dir/argparser.o"
+}
+]
