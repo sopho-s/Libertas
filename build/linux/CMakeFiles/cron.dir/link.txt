@@ -1,2 +1,0 @@
-/usr/bin/ar qc libcron.a CMakeFiles/cron.dir/cron.o
-/usr/bin/ranlib libcron.a

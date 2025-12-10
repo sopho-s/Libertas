@@ -1,1 +1,0 @@
-/usr/bin/g++ -g -rdynamic CMakeFiles/libertas.dir/linux.o -o libertas  shared/libargparser.a linux/libcron.a 
