@@ -10,6 +10,7 @@ class Cron {
         std::vector<std::string> cronlines;
         std::string shell;
         void ClearComments();
+        void GetLines();
     public:
         Cron();
 };
