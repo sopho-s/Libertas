@@ -60,7 +60,7 @@ void Cron::GetLines() {
         } else {
             std::string tempstr = line;
             CronLine cronline = CronLine();
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < 6; i++) {
                 std::string time = tempstr.substr(0, tempstr.find(' '));
                 tempstr = tempstr.substr(tempstr.find(' ') + 1);
                 cronline.SetIndex(time, i);
@@ -83,5 +83,9 @@ Cron::Cron() {
     this->ClearComments();
     this->UnifyWhitespace();
     this->GetLines();
+    DisplayInfo("Found jobs:");
+    for (std::string line : this->ReturnLines()) {
+        DisplayInfo(line);
+    }
     DisplayInfo("Nothing found with cron");
 }

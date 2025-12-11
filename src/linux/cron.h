@@ -8,19 +8,14 @@
 #pragma once
 
 class CronLine {
-    private:
+    public:
         std::string minute;
         std::string hour;
         std::string day;
         std::string month;
         std::string weekday;
-    public:
+        std::string user;
         CronLine() {;}
-        void SetMinute(std::string minute) {this->minute = minute;}
-        void SetHour(std::string hour) {this->hour = hour;}
-        void SetDay(std::string day) {this->day = day;}
-        void SetMonth(std::string month) {this->month = month;}
-        void SetWeekday(std::string weekday) {this->weekday = weekday;}
         void SetIndex(std::string value, int index) {
             switch (index) {
                 case 0:
@@ -38,11 +33,12 @@ class CronLine {
                 case 4:
                     this->weekday = value;
                     return;
-                default:
+                case 5:
+                    this->user = value;
                     return;
             }
         }
-        std::string ToString() {return this->minute + " " + this->hour + " " + this->day + " " + this->month + " " + this->weekday;}
+        std::string ToString() {return this->minute + " " + this->hour + " " + this->day + " " + this->month + " " + this->weekday + "\t" + this->user;}
 };
 
 class Cron {
@@ -61,6 +57,13 @@ class Cron {
                 returnstring += cronline.first.ToString() + " " + cronline.second + "\n";
             }
             return returnstring.substr(0, returnstring.size() - 1);
+        }
+        std::vector<std::string> ReturnLines() {
+            std::vector<std::string> returnstrings;
+            for (std::pair<CronLine, std::string> line : this->cronlines) {
+                returnstrings.push_back(line.first.ToString() + "\t" + line.second);
+            }
+            return returnstrings;
         }
         std::vector<File> GetAllFiles();
 };
