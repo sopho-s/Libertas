@@ -9,4 +9,5 @@ add_executable(libertas linux.cpp)
 target_link_libraries(libertas
     argparser
     cron
+    toolpage
     )

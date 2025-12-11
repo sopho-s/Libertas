@@ -1,8 +1,9 @@
+#include <iostream>
 #pragma once
 
 class Args {
-    private:
-        bool execute = true;
     public:
+        bool execute = true;
+        bool help = false;
         Args(int argc, char *argv[]);
 };
